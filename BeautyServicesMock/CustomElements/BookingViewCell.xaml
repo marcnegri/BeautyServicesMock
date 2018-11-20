@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BeautyServicesMock.CustomElements.BookingViewCell">
+   <Frame Margin="10,10,10,10" HasShadow="true" CornerRadius="5" BorderColor="Gray" VerticalOptions="Start" Padding="0">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="35" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="25" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Source="backgroundMassage.jpg" Grid.ColumnSpan="3" Grid.RowSpan="2" Aspect="AspectFill" Margin="1"/>
+            <Label Text="Massage" Grid.Row="2" Grid.ColumnSpan="3" Margin="10,0,10,0"/>
+            <Label Text="Le 20/12/2018" Grid.Row="3" Grid.ColumnSpan="3" Margin="10,0,10,0"/>
+            <Label Text="Terminé" FontAttributes="Bold" Grid.Row="4" Grid.ColumnSpan="3" HorizontalTextAlignment="Center"/>
+        </Grid>
+    </Frame>
+</ViewCell>

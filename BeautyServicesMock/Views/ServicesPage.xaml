@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+        xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:Customcontrols="clr-namespace:BeautyServicesMock.CustomElements;assembly=BeautyServicesMock"
+    x:Class="BeautyServicesMock.Views.ServicesPage">
+ <StackLayout BackgroundColor="White" Spacing="0">
+        <Label Text="Que cherchez-vous, Mary ?" TextColor="Gray" FontSize="Micro" FontAttributes="Bold" Margin="10,50,10,10"/>
+        <flv:FlowListView x:Name="lstservices"
+                          SeparatorVisibility="None"
+                          FlowColumnCount="2"
+                          BackgroundColor="White"
+                          HasUnevenRows="true">
+            <flv:FlowListView.FlowColumnTemplate>
+                <DataTemplate>
+                    <Customcontrols:ServicesViewCell />
+                </DataTemplate>
+            </flv:FlowListView.FlowColumnTemplate>
+        </flv:FlowListView>
+    </StackLayout>
+
+</ContentPage>

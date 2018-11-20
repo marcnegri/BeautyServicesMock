@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flv:FlowViewCell 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+    x:Class="BeautyServicesMock.CustomElements.ServicesViewCell" HeightRequest="175">
+    <StackLayout Spacing="0" VerticalOptions="Start">
+         <Frame HasShadow="true" CornerRadius="10" Margin="10,10,10,0" Padding="0" IsClippedToBounds="True" BackgroundColor="Transparent"> 
+            <Image Aspect="AspectFill" x:Name="imgService" Source="{Binding ImgSource}" HeightRequest="120"/> 
+        </Frame> 
+        <Label Text="{Binding Label}" TextColor="Teal" FontSize="Micro" Margin="20,0,0,0"/>
+        <Label Text="A partir de 25 CHF" FontSize="Micro" Margin="20,0,0,0"/>
+        <StackLayout.GestureRecognizers>
+            <TapGestureRecognizer Tapped="Handle_Tapped" />
+        </StackLayout.GestureRecognizers>
+        
+    </StackLayout>        
+</flv:FlowViewCell>
+

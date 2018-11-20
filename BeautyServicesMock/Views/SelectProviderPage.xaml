@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:Customcontrols="clr-namespace:BeautyServicesMock.CustomElements;assembly=BeautyServicesMock"
+    x:Class="BeautyServicesMock.Views.SelectProviderPage"  BackgroundColor="White" Title="Avec qui ?">
+    <StackLayout>
+        <Label Text="Etape 2 sur 4" FontSize="Micro" TextColor="Gray" Margin="30,30,0,0"/>
+        <Label Text="Choisissez votre prestataire" FontSize="Large" FontAttributes="Bold" TextColor="Gray" Margin="30,0,30,0"/>
+        <ListView x:Name="lstProviders"
+              SeparatorVisibility="None"
+              BackgroundColor="White"
+              VerticalOptions="FillAndExpand"
+              HasUnevenRows="True"
+              Margin="10">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Customcontrols:ProviderViewCell/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

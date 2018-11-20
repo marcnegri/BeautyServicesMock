@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="BeautyServicesMock.Views.MyBookingsPage"              
+             xmlns:Customcontrols="clr-namespace:BeautyServicesMock.CustomElements;assembly=BeautyServicesMock">
+    <StackLayout>
+        <ListView x:Name="lstBookings"
+              SeparatorVisibility="None"
+              BackgroundColor="White"
+              VerticalOptions="FillAndExpand"
+              HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Customcontrols:BookingViewCell/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>    
+
+</ContentPage>

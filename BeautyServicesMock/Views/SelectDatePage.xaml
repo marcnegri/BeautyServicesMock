@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar" 
+    x:Class="BeautyServicesMock.Views.SelectDatePage" BackgroundColor="White" Title="Calendrier">
+    <ScrollView>
+    <StackLayout>       
+            <Label Text="Etape 1 sur 4" FontSize="Micro" TextColor="Gray" Margin="30,30,0,0"/>
+            <Label Text="Choisissez le jour" FontSize="Large" FontAttributes="Bold" TextColor="Gray" Margin="30,0,30,0"/>
+            <controls:Calendar Padding="10,0,10,0" StartDay="Monday" SelectedBorderWidth="4" DisabledBorderColor="Black" DateClicked="Handle_DateClicked" />
+            <StackLayout x:Name="stkHour" IsVisible="false" Margin="10">
+                <Label Text="Choisissez le créneau horaire" FontSize="Large" FontAttributes="Bold" TextColor="Gray" />
+                <Frame HasShadow="true" BorderColor="Gray" CornerRadius="10" Margin="10"  BackgroundColor="White" > 
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="0">
+                        <Label Text="De 09:00 AM à 09:45 AM" FontSize="Micro" TextColor="Gray" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                        <Button BackgroundColor="Fuchsia" Text="Sélectionner" FontSize="Micro" HorizontalOptions="End" TextColor="White" WidthRequest="100" Clicked="Handle_Clicked"/>
+                    </StackLayout>                                
+                </Frame> 
+                <Frame HasShadow="true" BorderColor="Gray" CornerRadius="10" Margin="10"  BackgroundColor="White" > 
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="0">
+                        <Label Text="De 10:00 AM à 10:45 AM" FontSize="Micro" TextColor="Gray" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center" />
+                        <Button BackgroundColor="Fuchsia" Text="Sélectionner" FontSize="Micro" HorizontalOptions="End" TextColor="White" WidthRequest="100" Clicked="Handle_Clicked"/>
+                    </StackLayout>                               
+                </Frame>                
+            </StackLayout>
+    </StackLayout>
+    </ScrollView>        
+</ContentPage>
