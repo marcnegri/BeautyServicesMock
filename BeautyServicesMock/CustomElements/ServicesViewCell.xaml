@@ -9,7 +9,9 @@
             <Image Aspect="AspectFill" x:Name="imgService" Source="{Binding ImgSource}" HeightRequest="120"/> 
         </Frame> 
         <Label Text="{Binding Label}" TextColor="Teal" FontSize="Micro" Margin="20,0,0,0"/>
-        <Label Text="A partir de 25 CHF" FontSize="Micro" Margin="20,0,0,0"/>
+        <Label Text="25 CHF" FontSize="Micro" Margin="20,0,0,0"/>
+        <StackLayout Orientation="Horizontal" Margin="20,0,0,0"><Image Source="starsReview.png" WidthRequest="50" HeightRequest="10" /><Label Text="26" FontSize="Micro" /> </StackLayout>
+        
         <StackLayout.GestureRecognizers>
             <TapGestureRecognizer Tapped="Handle_Tapped" />
         </StackLayout.GestureRecognizers>

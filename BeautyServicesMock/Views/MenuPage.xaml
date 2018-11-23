@@ -33,23 +33,23 @@
                       </controls:CircleImage.HeightRequest>
                     </controls:CircleImage>
 
-                 <Label Text="Mary Smith"  FontSize="Micro" FontAttributes="Bold" TextColor="Black" Grid.Row="2" HorizontalTextAlignment="Center" />
+                 <Label Text="Mary Smith"  FontSize="Medium" FontAttributes="Bold" TextColor="Black" Grid.Row="2" HorizontalTextAlignment="Center" />
             
                 </Grid>
                 </StackLayout>
                 <StackLayout Margin="30">
-                    <Label Text="Home" TextColor="Fuchsia" FontSize="Micro" FontAttributes="Bold" Margin="0,10,0,10" x:Name="lblMenuHome"/>
+                    <Label Text="Home" TextColor="#87cefa" FontSize="Medium" FontAttributes="Bold" Margin="0,10,0,10" x:Name="lblMenuHome"/>
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="Home_Tapped"/>
                         </Label.GestureRecognizers>
-                    <Label Text="Mon compte" TextColor="Gray" FontSize="Micro" FontAttributes="Bold" Margin="0,10,0,10"/>
-                    <Label Text="Mes rendez-vous" TextColor="Gray" FontSize="Micro" FontAttributes="Bold" Margin="0,10,0,10" x:Name="lblMenuMyBookings">
+                    <Label Text="Mon compte" TextColor="Gray" FontSize="Medium" FontAttributes="Bold" Margin="0,10,0,10"/>
+                    <Label Text="Mes rendez-vous" TextColor="Gray" FontSize="Medium" FontAttributes="Bold" Margin="0,10,0,10" x:Name="lblMenuMyBookings">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="Handle_Tapped"/>
                         </Label.GestureRecognizers>
                     </Label>
-                    <Label Text="Favoris" TextColor="Gray" FontSize="Micro" FontAttributes="Bold" Margin="0,10,0,10"/>
-                    <Label Text="Paramètres" TextColor="Gray" FontSize="Micro" FontAttributes="Bold" Margin="0,10,0,10"/>
+                    <Label Text="Contact" TextColor="Gray" FontSize="Medium" FontAttributes="Bold" Margin="0,10,0,10"/>
+                    <Label Text="Paramètres" TextColor="Gray" FontSize="Medium" FontAttributes="Bold" Margin="0,10,0,10"/>
                 </StackLayout>   
             </StackLayout>  
         </ContentPage>

@@ -14,10 +14,10 @@
             <ColumnDefinition Width="auto" />
             <ColumnDefinition Width="100" />
         </Grid.ColumnDefinitions>
-        <controls:CircleImage Grid.RowSpan="2" Grid.Column="0" BorderColor="Teal" BorderThickness="2" HorizontalOptions="Center" Source="{Binding Avatar}" Aspect="AspectFill" />
-        <Label Text="Elisabeth" TextColor="Teal" FontSize="Micro" FontAttributes="Bold" Grid.Column="1" Grid.Row="0" VerticalTextAlignment="End" />                    
+        <controls:CircleImage Grid.RowSpan="2" Grid.Column="0" BorderColor="Teal" BorderThickness="2" Source="{Binding Avatar}" Aspect="AspectFill" />
+        <Label Text="Elisabeth" TextColor="Teal" FontSize="Medium" FontAttributes="Bold" Grid.Column="1" Grid.Row="0" VerticalTextAlignment="End" />                    
         <Label Text="10 ans d'expérience dans la coiffure" TextColor="Gray" FontSize="Micro" FontAttributes="Bold" Grid.Column="1" Grid.Row="1" VerticalTextAlignment="Start"/>                    
-        <Button BackgroundColor="Fuchsia" Grid.RowSpan="2" VerticalOptions="Center" Grid.Column="2" Text="Sélectionner" FontSize="Micro" HorizontalOptions="End" TextColor="White" WidthRequest="100" Clicked="Handle_Clicked"/>  
+        <Button BackgroundColor="Teal" Grid.RowSpan="2" VerticalOptions="Center" Grid.Column="2" Text="Sélectionner" FontSize="Micro" HorizontalOptions="End" TextColor="White" WidthRequest="100" Clicked="Handle_Clicked"/>  
     </Grid>
     </StackLayout>
 </ViewCell>

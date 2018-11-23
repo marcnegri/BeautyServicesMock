@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BeautyServicesMock.CustomElements.ServicesDetailsViewCell">
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BeautyServicesMock.CustomElements.ServicesDetailsViewCell" Tapped="Handle_Tapped">
     <StackLayout Spacing="0" VerticalOptions="Start" Margin="0,15,0,15">
          <Frame HasShadow="true" CornerRadius="5" Margin="30,10,30,10" Padding="0" IsClippedToBounds="True" BackgroundColor="Transparent"> 
             <Image x:Name="imgService" Aspect="AspectFill" Source="{Binding ImgSource}" HeightRequest="180"/> 
         </Frame> 
         <Label Text="{Binding Label}" TextColor="Teal" FontSize="Large" FontAttributes="Bold" Margin="30,0,0,0"/>
-        <Label Text="40 CHF" FontSize="Micro" Margin="30,0,0,0"/>
-        <StackLayout Orientation="Horizontal" Margin="30,0,0,0"><Image Source="starsReview.png" WidthRequest="50" HeightRequest="10" /><Label Text="26" FontSize="Micro" /> </StackLayout>
-        <StackLayout.GestureRecognizers>
-            <TapGestureRecognizer Tapped="Handle_Tapped" />
-        </StackLayout.GestureRecognizers>
+        <Label Text="A partir de 40 CHF" FontSize="Micro" Margin="30,0,0,0"/>
     </StackLayout>    
 </ViewCell>
 

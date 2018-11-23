@@ -14,7 +14,6 @@ namespace BeautyServicesMock.Views
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            this.Navigation.PushAsync(new PaymentPage());
         }
     }
 }

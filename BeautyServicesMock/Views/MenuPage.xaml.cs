@@ -11,9 +11,10 @@ namespace BeautyServicesMock.Views
         {
             InitializeComponent();
 
-            NavigationPage p = new NavigationPage(new ServicesPage())
+            NavigationPage p = new NavigationPage(new ServicesDetailsPage())
             {
-                BarBackgroundColor = Color.Fuchsia
+                BarBackgroundColor = Color.Teal, //Color.FromHex("#adebeb")
+                BarTextColor = Color.White
             };
             Detail = p;
         }
@@ -23,7 +24,8 @@ namespace BeautyServicesMock.Views
 
             NavigationPage p = new NavigationPage(new MyBookingsPage())
             {
-                BarBackgroundColor = Color.Fuchsia
+                BarBackgroundColor = Color.Teal,
+                BarTextColor = Color.White
             };
             Detail = p;
             lblMenuHome.TextColor = Color.Gray;
@@ -33,9 +35,10 @@ namespace BeautyServicesMock.Views
         void Home_Tapped(object sender, System.EventArgs e)
         {
 
-            NavigationPage p = new NavigationPage(new ServicesPage())
+            NavigationPage p = new NavigationPage(new ServicesDetailsPage())
             {
-                BarBackgroundColor = Color.Fuchsia
+                BarBackgroundColor = Color.Teal,
+                BarTextColor = Color.White
             };
             Detail = p;
             lblMenuMyBookings.TextColor = Color.Gray;

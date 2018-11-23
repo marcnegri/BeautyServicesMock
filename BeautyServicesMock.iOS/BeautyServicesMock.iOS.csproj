@@ -186,5 +186,9 @@
     <BundleResource Include="Resources\imgProfile.jpg" />
     <BundleResource Include="Resources\imgProfile2.JPG" />
     <BundleResource Include="Resources\starsReview.png" />
+    <BundleResource Include="Resources\backgroundHairStyle.jpg" />
+    <BundleResource Include="Resources\iconPrice.png" />
+    <BundleResource Include="Resources\iconClock.png" />
+    <BundleResource Include="Resources\iconPosition.png" />
   </ItemGroup>
 </Project>

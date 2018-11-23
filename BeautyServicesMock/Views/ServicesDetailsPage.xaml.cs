@@ -12,13 +12,13 @@ namespace BeautyServicesMock.Views
             InitializeComponent();
             MessagingCenter.Subscribe<ServicesDetailsViewCell>(this, "ImgWeesh", async (page) =>
             {
-                await this.Navigation.PushAsync(new SpecificServiceDetailsPage());
+                await this.Navigation.PushAsync(new ServicesPage());
             });
 
             List<ServiceDetail> lstView = new List<ServiceDetail>();
-            lstView.Add(new ServiceDetail() { ImgSource = "backgroundBrushing.jpg", Label = "Brushing" });
-            lstView.Add(new ServiceDetail() { ImgSource = "backgroundColor.jpg", Label = "Coupe" });
-            lstView.Add(new ServiceDetail() { ImgSource = "backgroundHairCut.jpg", Label = "Coloration" });
+            lstView.Add(new ServiceDetail() { ImgSource = "backgroundCoiffure.jpg", Label = "Coiffure" });
+            lstView.Add(new ServiceDetail() { ImgSource = "backgroundMakeup.jpg", Label = "Maquillage" });
+            lstView.Add(new ServiceDetail() { ImgSource = "backgroundMassage.jpg", Label = "Massage" });
             /*
             lstView.Add(new ServiceDetail() { ImgSource = "backgroundColor.jpg" });
             lstView.Add(new ServiceDetail() { ImgSource = "backgroundBrushing.jpg" });

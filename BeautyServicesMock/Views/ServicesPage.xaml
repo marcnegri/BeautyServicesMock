@@ -6,7 +6,7 @@
     xmlns:Customcontrols="clr-namespace:BeautyServicesMock.CustomElements;assembly=BeautyServicesMock"
     x:Class="BeautyServicesMock.Views.ServicesPage">
  <StackLayout BackgroundColor="White" Spacing="0">
-        <Label Text="Que cherchez-vous, Mary ?" TextColor="Gray" FontSize="Micro" FontAttributes="Bold" Margin="10,50,10,10"/>
+        <Label Text="Choisir votre prestation" TextColor="Gray" FontSize="Medium" FontAttributes="Bold" Margin="10,50,10,10"/>
         <flv:FlowListView x:Name="lstservices"
                           SeparatorVisibility="None"
                           FlowColumnCount="2"

@@ -13,15 +13,15 @@ namespace BeautyServicesMock.Views
 
             MessagingCenter.Subscribe<ServicesViewCell>(this, "service", async (page) =>
             {
-                await this.Navigation.PushAsync(new ServicesDetailsPage());
+                await this.Navigation.PushAsync(new SpecificServiceDetailsPage());
             });
 
             // Mock 
             List<Service> lstView = new List<Service>();
-            lstView.Add(new Service() { ImgSource = "backgroundCoiffure.jpg", Label = "Coiffure" });
-            lstView.Add(new Service() { ImgSource = "backgroundMassage.jpg", Label = "Massage" });
-            lstView.Add(new Service() { ImgSource = "backgroundNail.jpg", Label = "Ongles" });
-            lstView.Add(new Service() { ImgSource = "backgroundMakeup.jpg", Label = "Maquillage" });
+            lstView.Add(new Service() { ImgSource = "backgroundBrushing.jpg", Label = "Brushing" });
+            lstView.Add(new Service() { ImgSource = "backgroundHairCut.jpg", Label = "Coupe" });
+            lstView.Add(new Service() { ImgSource = "backgroundColor.jpg", Label = "Couleur" });
+            lstView.Add(new Service() { ImgSource = "backgroundHairStyle.jpg", Label = "Coupe courte" });
 
             lstservices.FlowItemsSource = lstView;
         }

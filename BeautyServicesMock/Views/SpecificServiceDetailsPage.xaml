@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BeautyServicesMock.Views.SpecificServiceDetailsPage">
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="BeautyServicesMock.Views.SpecificServiceDetailsPage"
+    Title="Brushing">
  <StackLayout>
         <ScrollView VerticalOptions="FillAndExpand">
             <Grid>
                   <Grid.RowDefinitions>
                     <RowDefinition Height="20" />
                     <RowDefinition Height="180" />
-                    <RowDefinition Height="30" />
+                    <RowDefinition Height="80" />
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -14,20 +18,31 @@
                   </Grid.RowDefinitions>
                   <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
                   </Grid.ColumnDefinitions>
-                <Image HeightRequest="180" Grid.RowSpan="2" Source="backgroundBrushing.jpg" Aspect="AspectFill" />
-                <Label Text="Brushing" TextColor="Gray" Grid.Row="2" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Start" Margin="20,0,20,0"/>
-                <Label Text="N’hésitez pas à vous renseigner sur les gestes et outils spécifiques qui correspondent le mieux à votre type de cheveux avant d’entamer votre brushing. Si vous avez les cheveux bouclés, par exemple, procurez-vous un embout diffuseur, qui permettra de mieux répartir la chaleur et d’obtenir un meilleur résultat. Si vous avez les cheveux fins, évitez les sèche-cheveux à trop forte puissance, qui risqueraient d’emmêler votre chevelure." TextColor="Gray" Grid.Row="3" FontSize="Micro" FontAttributes="Bold" HorizontalOptions="Start" Margin="20,0,20,0"/>
-                <Label Text="La séance : " TextColor="Gray" Grid.Row="4" FontSize="Micro" FontAttributes="Bold" HorizontalOptions="Start" Margin="20,20,20,0"/>
-                <Label Text="Les brushings se font impérativement sur cheveux humides, préalablement lavés avec du shampooing adapté au type de chevelure. Pour faire un brushing, le coiffeur commence par le démêlage des fibres capillaires à l’aide d’un peigne à dents hyper larges" TextColor="Gray" Grid.Row="5" FontSize="Micro" FontAttributes="Bold" HorizontalOptions="Start" Margin="20,0,20,0"/>
-                <Label Text="Durée : 20min" TextColor="Gray" Grid.Row="6" FontSize="Micro" FontAttributes="Bold" HorizontalOptions="Start" Margin="20,20,20,0"/>
+                <Image HeightRequest="180" Grid.RowSpan="2" Grid.Row="0" Source="backgroundBrushing.jpg" Aspect="AspectFill" Grid.ColumnSpan="2"/>                                   
+                <StackLayout Opacity="0.7" BackgroundColor="Gray" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" HeightRequest="30" Grid.RowSpan="2" Grid.Row="0" VerticalOptions="End">
+                </StackLayout>
+                <Image Source="starsReview.png" WidthRequest="80" HeightRequest="35" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,20,0"  Grid.RowSpan="2" Grid.Row="0" Grid.ColumnSpan="2"/>
+                
+                <StackLayout Grid.Row="2" Margin="20,30,20,0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Image Source="iconPrice.png" HeightRequest="20" /> <Label Text="40 CHF" TextColor="Black"  FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold" HorizontalOptions="Center" />    
+                </StackLayout>
+                
+                <StackLayout Grid.Row="2" Grid.Column="1" Margin="20,30,20,0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Image Source="iconClock.png" HeightRequest="20" /> <Label Text="30 minutes" TextColor="Black"  FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold" HorizontalOptions="Center" />    
+                </StackLayout>                
+
+                
+                <Label Text="N’hésitez pas à vous renseigner sur les gestes et outils spécifiques qui correspondent le mieux à votre type de cheveux avant d’entamer votre brushing. Si vous avez les cheveux bouclés, par exemple, procurez-vous un embout diffuseur, qui permettra de mieux répartir la chaleur et d’obtenir un meilleur résultat. Si vous avez les cheveux fins, évitez les sèche-cheveux à trop forte puissance, qui risqueraient d’emmêler votre chevelure." TextColor="Gray" Grid.Row="4" FontSize="Micro" FontAttributes="Bold" HorizontalOptions="Start" Margin="20,0,20,0" Grid.ColumnSpan="2"/>
+                <Label Text="Info pratique : " TextColor="Gray" Grid.Row="5" FontSize="Micro" FontAttributes="Bold" HorizontalOptions="Start" Margin="20,20,20,0" Grid.ColumnSpan="2"/>
+                <Label Text="Les brushings se font impérativement sur cheveux humides, préalablement lavés avec du shampooing adapté au type de chevelure. Pour faire un brushing, le coiffeur commence par le démêlage des fibres capillaires à l’aide d’un peigne à dents hyper larges" TextColor="Gray" Grid.Row="6" FontSize="Micro" FontAttributes="Bold" Grid.ColumnSpan="2" HorizontalOptions="Start" Margin="20,0,20,0"/>
             </Grid>                
         </ScrollView>
         <StackLayout VerticalOptions="End" HeightRequest="80">
             <BoxView HeightRequest="1" BackgroundColor="Gray"/>
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="20,10,20,0">
-                <Label Text="40 CHF" TextColor="Gray" FontSize="Micro" FontAttributes="Bold" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center"/>
-                <Button BackgroundColor="Fuchsia" Text="RESERVER" WidthRequest="100" HorizontalOptions="End" TextColor="White" Clicked="Handle_Clicked"/>
+                <Button BackgroundColor="Teal" Text="RESERVER" WidthRequest="180    "  HorizontalOptions="CenterAndExpand" TextColor="White" Clicked="Handle_Clicked"/>
             </StackLayout>
         </StackLayout>
     </StackLayout>
